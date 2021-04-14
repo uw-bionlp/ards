@@ -5,6 +5,21 @@ The project was developed by [Professor Meliha Yetisgen and Dr. Kevin Lybarger o
 
 <p align="center"><img src="docs/ards_demo.gif" width="650px"/></p>
 
+# Usage
+The [main.py](main.py) script provides a convenient means of applying the classifier on a directory of clinical notes. Running the tool produces an output for each note that 
+1. Predicts opacities (increased radiodensity) 
+2. Classifies them as parenchymal (indicative of alveolar edema/infiltrates) or extraparenchymal (outside the lungs or not indicative of alveolar edema/infiltrates) 
+3. Resolves laterality (unilateral or bilateral)
+
+The `.json` output for each document's predictions is of the form:
+
+```json
+{
+    "infiltrates": "none" | "present" | "unilateral" | "bilateral",
+    "extraparenchymal": "none" | "present" | "unilateral" | "bilateral"
+}
+```
+
 # Requirements
  - Python version >= 3.6
  - PyTorch version >= 1.6.0
@@ -13,8 +28,6 @@ The project was developed by [Professor Meliha Yetisgen and Dr. Kevin Lybarger o
  See [requirements.txt](requirements.txt) for additional dependencies.
 
 # Installation
-This repository provides a simple high-level Python-based wrapper command-line for processing clinical notes (as `.txt` documents) and outputting `.json` files of the predicted values.
-
 1. As the trained model for this code is not included in the repository, please contact contact Professor Meliha Yetisgen [melihay@uw.edu](mailto:melihay@uw.edu) to gain access to the model.
 
 2. Install Python3 dependencies. We recommend doing so using a virtual environment:
@@ -39,6 +52,6 @@ $ python3 main.py <your_notes_directory>
 ```
 
 You can also specify the additional parameters
-- `--output_path`, which outputs your files to a specify location (rather than a default `/output/<dir_name><current_timestamp> directory)
+- `--output_path`, which outputs your files to a specify location (rather than a default `/output/<dir_name><current_timestamp>` directory)
 - `--output_single_file`, which can alternatively output a single `.jsonl` file with each row in the file representing an input file's output
 - `--batch_size`, which specifies the number of note batches to predict at a time. If unspecified, this defaults to `8`.
