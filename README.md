@@ -3,6 +3,8 @@ This repository implements a high-level wrapper using Python3 and PyTorch of met
 
 The project was developed by [Professor Meliha Yetisgen and Dr. Kevin Lybarger of UW-BioNLP](http://depts.washington.edu/bionlp/index.html?people) and collaborators at the [University of Washington](http://www.washington.edu/).
 
+<p align="center"><img src="docs/ards_demo.gif" width="650px"/></p>
+
 # Requirements
  - Python version >= 3.6
  - PyTorch version >= 1.6.0
