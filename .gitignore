@@ -1,0 +1,5 @@
+model/*
+venv
+test
+.vscode
+__pycache__

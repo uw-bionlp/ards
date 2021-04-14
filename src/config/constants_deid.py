@@ -1,0 +1,34 @@
+
+
+
+
+SDOH_PARTIAL = 'sdoh_partial'
+SYMPTOMS = 'symptoms'
+
+
+
+
+DEID_JSON_KEY1 = 'deident'
+DEID_JSON_KEY2 = 'deidentText'
+
+
+
+DEID_PAT_ORIGINAL = r'<([A-Z]+)/>'
+DEID_PAT_NEW = r'[\1]'
+DEID_PAT_LABEL = '[{}]'
+
+AGE = "AGE"
+CONTACT = "CONTACT"
+DATE = "DATE"
+IDS = "IDs"
+LOCATION = "LOCATION"
+NAME = "NAME"
+PROFESSION = "PROFESSION"
+
+LABELS = [AGE, CONTACT, DATE, IDS, LOCATION, NAME, PROFESSION]
+
+DEID_FOOTER = '<< REVIEW_STATUS >>'
+REVIEW_STATUS = 'review_status'
+REVIEW_STATUS_ = 'review_status_'
+PENDING = "PENDING"
+DONE = "DONE"
