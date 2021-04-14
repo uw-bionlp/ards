@@ -28,9 +28,15 @@ The `.json` output for each document's predictions is of the form:
  See [requirements.txt](requirements.txt) for additional dependencies.
 
 # Installation
-1. As the trained model for this code is not included in the repository, please contact contact Professor Meliha Yetisgen [melihay@uw.edu](mailto:melihay@uw.edu) to gain access to the model.
+1. Clone the repository
 
-2. Install Python3 dependencies. We recommend doing so using a virtual environment:
+```sh
+$ git clone git@github.com:uw-bionlp/ards.git
+```
+
+2. As the trained model for this code is not included in the repository, please contact contact Professor Meliha Yetisgen [melihay@uw.edu](mailto:melihay@uw.edu) to gain access to the model. Copy the model files to `/ards/model`.
+
+3. Install Python3 dependencies. We recommend doing so using a virtual environment:
 
 ```sh
 $ cd /ards
@@ -39,13 +45,13 @@ $ source venv/bin/activate
 $ python3 -m pip install -r requirements
 ```
 
-3. Download the spaCy english language model
+4. Download the spaCy english language model
 
 ```sh
 $ python3 -m spacy download en
 ```
 
-3. Run the tool on a directory of Chest X-ray notes as `.txt` files:
+5. Run the tool on a directory of Chest X-ray notes as `.txt` files:
 
 ```sh
 $ python3 main.py <your_notes_directory>
