@@ -3,10 +3,10 @@ This repository implements a high-level wrapper using Python3 and PyTorch of met
 
 The project was developed by [Professor Meliha Yetisgen and Dr. Kevin Lybarger of UW-BioNLP](http://depts.washington.edu/bionlp/index.html?people) and collaborators at the [University of Washington](http://www.washington.edu/).
 
-<p align="center"><img src="docs/ards_demo.gif" width="650px"/></p>
+<p align="center"><img src="docs/ards_demo.gif"></p>
 
 # Usage
-The [main.py](main.py) script provides a convenient means of applying the classifier on a directory of clinical notes. Running the tool produces an output for each note that 
+The [main.py](main.py) script provides a convenient means of applying the classifier on a directory of **Chest X-ray** notes as `.txt` files. Running the tool produces an output for each Chest X-ray that 
 1. Predicts opacities (increased radiodensity) 
 2. Classifies them as parenchymal (indicative of alveolar edema/infiltrates) or extraparenchymal (outside the lungs or not indicative of alveolar edema/infiltrates) 
 3. Resolves laterality (unilateral or bilateral)
@@ -45,7 +45,7 @@ $ python3 -m pip install -r requirements
 $ python3 -m spacy download en
 ```
 
-3. Run the tool on a directory of clinical notes as `.txt` files:
+3. Run the tool on a directory of Chest X-ray notes as `.txt` files:
 
 ```sh
 $ python3 main.py <your_notes_directory>
