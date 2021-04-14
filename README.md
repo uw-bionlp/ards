@@ -15,8 +15,8 @@ The `.json` output for each document's predictions is of the form:
 
 ```json
 {
-    "infiltrates": "none" | "present" | "unilateral" | "bilateral",
-    "extraparenchymal": "none" | "present" | "unilateral" | "bilateral"
+    "infiltrates": "none" "present" "unilateral" "bilateral",
+    "extraparenchymal": "none" "present" "unilateral" "bilateral"
 }
 ```
 
