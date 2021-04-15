@@ -35,6 +35,7 @@ The `.json` output for each document's predictions is of the form:
 
 ```sh
 $ git clone git@github.com:uw-bionlp/ards.git
+$ cd /ards
 ```
 
 2. As the trained model for this code is not included in the repository, please contact Professor Meliha Yetisgen [melihay@uw.edu](mailto:melihay@uw.edu) to gain access to the model. Copy the model files to `/ards/model`.
@@ -42,10 +43,9 @@ $ git clone git@github.com:uw-bionlp/ards.git
 3. Install Python3 dependencies. We recommend doing so using a virtual environment:
 
 ```sh
-$ cd /ards
 $ python3 -m venv venv
 $ source venv/bin/activate
-$ python3 -m pip install -r requirements
+$ python3 -m pip install -r requirements.txt
 ```
 
 4. Download the spaCy english language model
