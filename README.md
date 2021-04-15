@@ -9,7 +9,7 @@ The project was developed by [Professor Meliha Yetisgen and Dr. Kevin Lybarger o
 - **Input** - Chest X-Ray findings as `.txt` files
 - **Output** - Predictions for ARDS-related information as `.json` files
 
-The [main.py](main.py) script provides a convenient means of applying the classifier on a directory of **Chest X-ray** notes as `.txt` files. Running the tool produces an output for each Chest X-ray note that 
+The [main.py](main.py) script provides a convenient means of applying the classifier on a directory of Chest X-ray notes as `.txt` files. Running the tool produces an output for each Chest X-ray note that 
 1. Predicts opacities (increased radiodensity) 
 2. Classifies them as parenchymal (indicative of alveolar edema/infiltrates) or extraparenchymal (outside the lungs or not indicative of alveolar edema/infiltrates) 
 3. Resolves laterality (unilateral or bilateral)
@@ -37,7 +37,7 @@ The `.json` output for each document's predictions is of the form:
 $ git clone git@github.com:uw-bionlp/ards.git
 ```
 
-2. As the trained model for this code is not included in the repository, please contact contact Professor Meliha Yetisgen [melihay@uw.edu](mailto:melihay@uw.edu) to gain access to the model. Copy the model files to `/ards/model`.
+2. As the trained model for this code is not included in the repository, please contact Professor Meliha Yetisgen [melihay@uw.edu](mailto:melihay@uw.edu) to gain access to the model. Copy the model files to `/ards/model`.
 
 3. Install Python3 dependencies. We recommend doing so using a virtual environment:
 
